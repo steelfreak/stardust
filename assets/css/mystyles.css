@@ -1,0 +1,46 @@
+/* Container for overlay */
+
+.iframe-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Minimized state: thumbnail size */
+
+.iframe-container.minimized {
+  width: 200px;
+  height: 150px;
+}
+
+#game-iframe {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Single overlay button: top-right */
+
+.overlay-btns {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10000;
+}
+
+.overlay-btn {
+  padding: 8px 12px;
+  background: rgba(0, 123, 255, 0.9);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.overlay-btn:hover {
+  background: rgba(0, 86, 179, 0.9);
+}
+
