@@ -6,7 +6,7 @@ const games = [
         tags: ["Action", "Adventure", "Open World"],
         image: "assets/img/sweetsaga.jpg",
         genre: "action",
-        url: "Games/sweetsaga.html"
+        url: "https://stardust-gcd.github.io/Sweet-Saga/"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const games = [
         tags: ["RPG", "Fantasy", "Adventure"],
         image: "assets/img/flappy.jpg",
         genre: "rpg",
-        url: "Games/flappy.html"
+        url: "https://stardust-gcd.github.io/Flappy/"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const games = [
         tags: ["Shooter", "Tactical", "RPG"],
         image: "assets/img/fruitslicer.jpg",
         genre: "shooter",
-        url: "Games/slicer.html"
+        url: "https://stardust-gcd.github.io/Fruit-Slicer/"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const games = [
         tags: ["Adventure", "Puzzle", "Exploration"],
         image: "assets/img/breakthru.jpg",
         genre: "adventure",
-        url: "Games/breakout.html"
+        url: "https://stardust-gcd.github.io/Breakout/"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const games = [
         tags: ["Racing", "Arcade", "Multiplayer"],
         image: "assets/img/memorize.jpg",
         genre: "action",
-        url: "Games/memorize.html"
+        url: "https://stardust-gcd.github.io/Memorize/"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const games = [
         tags: ["Strategy", "RTS", "Multiplayer"],
         image: "assets/img/snake.jpg",
         genre: "strategy",
-        url: "Games/snake.html"
+        url: "https://stardust-gcd.github.io/Snake/"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const games = [
         tags: ["Platformer", "Retro", "Single Player"],
         image: "assets/img/tilting.jpg",
         genre: "adventure",
-        url: "Games/tilting.html"
+        url: "https://stardust-gcd.github.io/Tilting-Maze/"
     },
     {
         id: 8,
@@ -69,7 +69,17 @@ const games = [
         tags: ["MOBA", "Competitive", "Team-Based"],
         image: "assets/img/tetris.jpg",
         genre: "action",
-        url: "Games/tetris.html"
+        url: "https://stardust-gcd.github.io/Tetris/"
+    },
+    {
+        id: 9,
+        title: "Space Blaster",
+        desc: "It is Battle time. Shoot them all up and don't miss.",
+        tags: ["MOBA", "Competitive", "Team-Based"],
+        image: "assets/img/blaster.jpg",
+        genre: "action",
+        url: "https://stardust-gcd.github.io/space-Blaster/"
+        
     }
 ];
 
@@ -96,9 +106,21 @@ function filterGames(genre) {
     renderGames(filtered);
 }
 
+//Original Working Code. Works fine
+// function playGame(id) {
+//     const game = games.find(g => g.id === id);
+//     window.open(game.url, '_blank');
+// }
+
+//Sample trial work
 function playGame(id) {
     const game = games.find(g => g.id === id);
-    window.open(game.url, '_blank');
+    window.open(
+        game.url,  // Replace with your popup page URL
+        'popup',
+        'toolbar=no,menubar=no,location=no,status=no,scrollbars=yes,resizable=yes'
+        );
+
 }
 
 // Filter functionality
