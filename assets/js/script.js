@@ -3,7 +3,7 @@ const games = [
         id: 1,
         title: "Sweet Saga",
         desc: "Interesting space to crush Sweets of different types. Try some of them.",
-        tags: ["Action", "Adventure", "Open World"],
+        tags: ["Action", "Adventure", "Mobile","PC"],
         image: "assets/img/sweetsaga.jpg",
         genre: "action",
         url: "https://stardust-gcd.github.io/Sweet-Saga/"
@@ -12,7 +12,7 @@ const games = [
         id: 2,
         title: "Flappy",
         desc: "Epic Adventure of the flappy bird unending.",
-        tags: ["RPG", "Fantasy", "Adventure"],
+        tags: ["Fantasy", "Adventure","Mobile", "PC"],
         image: "assets/img/flappy.jpg",
         genre: "rpg",
         url: "https://stardust-gcd.github.io/Flappy/"
@@ -21,7 +21,7 @@ const games = [
         id: 3,
         title: "Fruit Slicer",
         desc: "Time to slice the fruits. pick your tool and slice.",
-        tags: ["Shooter", "Tactical", "RPG"],
+        tags: ["Shooter", "Tactical", "RPG","PC"],
         image: "assets/img/fruitslicer.jpg",
         genre: "shooter",
         url: "https://stardust-gcd.github.io/Fruit-Slicer/"
@@ -30,7 +30,7 @@ const games = [
         id: 4,
         title: "Breakthout",
         desc: "Mystery adventure exploring ancient ruins and forgotten civilizations.",
-        tags: ["Adventure", "Puzzle", "Exploration"],
+        tags: ["Adventure", "Puzzle", "Exploration","PC"],
         image: "assets/img/breakthru.jpg",
         genre: "adventure",
         url: "https://stardust-gcd.github.io/Breakout/"
@@ -39,7 +39,7 @@ const games = [
         id: 5,
         title: "Memorize",
         desc: "Can you remember what you saw several minutes ago.",
-        tags: ["Racing", "Arcade", "Multiplayer"],
+        tags: ["Strategy", "Mobile", "PC"],
         image: "assets/img/memorize.jpg",
         genre: "action",
         url: "https://stardust-gcd.github.io/Memorize/"
@@ -48,7 +48,7 @@ const games = [
         id: 6,
         title: "Snake",
         desc: "Very active and to the point. Enjoy the fun of having a longer snake.",
-        tags: ["Strategy", "RTS", "Multiplayer"],
+        tags: ["Strategy", "RTS", "PC", "Mobile"],
         image: "assets/img/snake.jpg",
         genre: "strategy",
         url: "https://stardust-gcd.github.io/Snake/"
@@ -57,7 +57,7 @@ const games = [
         id: 7,
         title: "Tilting Maze",
         desc: "Retro platformer with modern mechanics and hand-crafted levels.",
-        tags: ["Platformer", "Retro", "Single Player"],
+        tags: ["Mobile", "PC", "Retro", "Single Player"],
         image: "assets/img/tilting.jpg",
         genre: "adventure",
         url: "https://stardust-gcd.github.io/Tilting-Maze/"
@@ -66,7 +66,7 @@ const games = [
         id: 8,
         title: "Tetris",
         desc: "Competitive MOBA with deep hero customization and strategic teamplay.",
-        tags: ["MOBA", "Competitive", "Team-Based"],
+        tags: ["MOBA", "Strategy", "Competitive", "PC"],
         image: "assets/img/tetris.jpg",
         genre: "action",
         url: "https://stardust-gcd.github.io/Tetris/"
@@ -75,10 +75,20 @@ const games = [
         id: 9,
         title: "Space Blaster",
         desc: "It is Battle time. Shoot them all up and don't miss.",
-        tags: ["MOBA", "Competitive", "Team-Based"],
+        tags: ["Shooting", "RPG", "PC","Mobile"],
         image: "assets/img/blaster.jpg",
-        genre: "action",
+        genre: "shooter",
         url: "https://stardust-gcd.github.io/space-Blaster/"
+        
+    },
+    {
+        id: 10,
+        title: "Try this Track",
+        desc: "Let us move around. Just to discover and learn how the road move.",
+        tags: ["Adventure", "racing", "car","PC"],
+        image: "assets/img/racing.jpg",
+        genre: "rpg",
+        url: "https://stardust-gcd.github.io/Try-this-track/"             
         
     }
 ];
